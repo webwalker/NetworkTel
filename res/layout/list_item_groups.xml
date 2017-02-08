@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp" >
+
+    <TextView
+        android:id="@+id/txtGroupName"
+        style="@style/list_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="40dp"
+        android:text="No data" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtMemberCount"
+        style="@style/list_item_style"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:text="No data"
+        android:textColor="@color/gray" >
+    </TextView>
+
+</LinearLayout>

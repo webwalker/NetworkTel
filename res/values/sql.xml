@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="select_mobile_area"><Data><![CDATA[select mobilearea, mobiletype from t_location_info where mobilenumber = ? limit 1]]></Data></string>
+    <string name="select_tel_area"><Data><![CDATA[select mobilearea from t_mobile_area where areacode = ? or areacode = ? limit 1]]></Data></string>
+    <string name="select_recent_calls"><Data><![CDATA[select * from t_recent_calls  order by calltimes desc limit ?;]]></Data></string>
+    <string name="select_single_recent_calls"><Data><![CDATA[select * from t_recent_calls  where username = ? and phone = ?]]></Data></string>
+    <string name="insert_recent_calls"><Data><![CDATA[insert into t_recent_calls (UserID,UserName, Department,UserIcon,Phone, ExtensionNO,CallTimes,Ext,LastCallDate) values (?,?,?,?,?,?,?,?,?);]]></Data></string>
+    <string name="update_recent_calls"><Data><![CDATA[update t_recent_calls set CallTimes = CallTimes + 1 where UserName = ? AND Phone = ?;]]></Data></string>
+
+</resources>

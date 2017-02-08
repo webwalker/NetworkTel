@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zxcloud.tel.ui.TopNavBar
+        android:id="@+id/inc_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inc_navbar"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dial_num_common_123"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="当前版本：{0}"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:id="@+id/tvReleaseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014年10月1日发布"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_16" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button_blue"
+            android:text="检查新版本"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20" />
+    </LinearLayout>
+
+</RelativeLayout>

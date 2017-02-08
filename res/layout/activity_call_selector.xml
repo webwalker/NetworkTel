@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffebebeb"
+    android:minWidth="320.0dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_blue"
+        android:gravity="center"
+        android:paddingBottom="15.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="15.0dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_m" />
+
+    <LinearLayout
+        android:id="@+id/lWifi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="50.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20.0dip"
+            android:gravity="left|center"
+            android:text="WiFi直拨"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lFree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="50.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:text="免流量拨打"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lSim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minHeight="50.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20.0dip"
+            android:gravity="center"
+            android:text="手机卡拨打"
+            android:textColor="#ff333333"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_explain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="提示:"
+            android:textColor="#ff333333"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:lineSpacingExtra="3.0dip"
+            android:text="如果您不想看到此页面,请回到众语系统设置中,关闭集成系统拨号"
+            android:textColor="#ff333333"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

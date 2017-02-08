@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistActivity" >
+
+    <com.zxcloud.tel.ui.TopNavBar
+        android:id="@+id/inc_navbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lRegInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inc_navbar"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/txtPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="欢迎注册“网络电话”，请填写下面的基本信息："
+            android:textSize="@dimen/font_small_1" />
+
+        <EditText
+            android:id="@+id/etComCode"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/line_login_bg"
+            android:hint="输入企业号"
+            android:inputType="number"
+            android:maxLength="8"
+            android:text="10000001" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line_login_bg"
+            android:hint="输入分机号"
+            android:inputType="number"
+            android:maxLength="8"
+            android:text="20010005" />
+
+        <EditText
+            android:id="@+id/etCode"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line_login_bg"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:text="1111" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_button_blue"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lRegPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lRegInput"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/etPass"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line_login_bg"
+            android:hint="设置密码（6-12位字母或数字）"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:text="111111" />
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/line_login_bg"
+            android:hint="重复密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:text="111111" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/lRegAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbProtocal"
+                style="@drawable/selector_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="同意" />
+
+            <TextView
+                android:id="@+id/txtProtocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="用户协议"
+                android:textColor="@color/common_blue"
+                android:textSize="@dimen/font_17" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_button_blue"
+            android:text="提交注册"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

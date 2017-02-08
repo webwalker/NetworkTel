@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="font_title">#333333</color>
+    <color name="font_content_3">#333333</color>
+    <color name="font_content_6">#666666</color>
+    <color name="font_comment">#999999</color>
+    <!-- 按钮和蓝色字 -->
+    <color name="common_blue">#0097f3</color>
+    <color name="green_color">#00c078</color>
+    <color name="dial_btn">#ff5028</color>
+    <color name="line_deep">#d0d0d0</color>
+    <color name="line_light">#d9d9d9</color>
+    <color name="line_light_little">#dddddd</color>
+    <color name="list_item_normal">#ffffffff</color>
+    <color name="list_item_pressed">#ff1b83ea</color>
+    <color name="gray">#ff58616d</color>
+    <color name="text_color_label">#ff000000</color>
+    <color name="dial_num_pressed">#ffdbdadc</color>
+    <color name="bg_app">#ffefeef4</color>
+    <color name="meeting_receiver_refuse">#F0EDC2</color>
+    <color name="meeting_receiver_accept">#E2E2E2</color>
+    <color name="orange_exit">#EF6040</color>
+    <!-- In-call UI -->
+    <!-- <color name="incall_textConnected">#99CE3F</color>  green -->
+    <color name="incall_textConnected">#40CEA3</color>
+    
+    <color name="incall_textEnded">#FF6072</color> <!-- red -->
+    <color name="incall_textOnHold">#FF9524</color> <!-- orange -->
+    
+    <!-- DTMF Dialer -->
+    <color name="dtmf_dialer_background">#333333</color> <!-- green -->
+
+    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_remaining_text">#FFFF0033</color>
+</resources>

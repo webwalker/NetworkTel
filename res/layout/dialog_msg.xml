@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_dialog"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="消息"
+            android:textSize="@dimen/font_dialog" />
+
+        <include layout="@layout/inc_line_light" />
+
+        <TextView
+            android:id="@+id/txtButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="确定"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/font_dialog" />
+    </LinearLayout>
+
+</RelativeLayout>

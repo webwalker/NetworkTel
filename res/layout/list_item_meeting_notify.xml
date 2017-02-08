@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8.0dip"
+        android:paddingTop="8.0dip" >
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/list_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:singleLine="true"
+                android:text="徐建"
+                android:textSize="@dimen/font_20" />
+
+            <TextView
+                android:id="@+id/tvJoinTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatusAccept"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:background="@color/meeting_receiver_accept"
+            android:gravity="center"
+            android:text="已接受"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_18" />
+
+        <TextView
+            android:id="@+id/tvStatusRefuse"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:background="@color/meeting_receiver_refuse"
+            android:gravity="center"
+            android:text="已拒绝"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_18"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/inc_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_line_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会议时间：{0}"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMeetingDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="会议标题：{0}"
+        android:textSize="@dimen/font_18" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="参加人员：{0}"
+        android:textSize="@dimen/font_18" />
+
+    <include
+        android:id="@+id/inc_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        layout="@layout/common_line_h" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lMeetingAction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvRefuse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_list_item"
+                android:gravity="center"
+                android:text="接受"
+                android:textColor="@color/common_blue"
+                android:textSize="@dimen/font_19" />
+
+            <include
+                android:id="@+id/inc_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                layout="@layout/common_line_h" />
+
+            <TextView
+                android:id="@+id/tvAccept"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_list_item"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/common_blue"
+                android:textSize="@dimen/font_19" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_list_item"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/font_19" />
+    </LinearLayout>
+
+</LinearLayout>

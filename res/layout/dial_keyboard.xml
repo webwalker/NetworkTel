@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/common_line_h" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="1" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_1" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="2" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_2" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="3" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_3" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+    </LinearLayout>
+    <include layout="@layout/common_line_h" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="4" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_4" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="5" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_5" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="6" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_6" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+    </LinearLayout>
+    <include layout="@layout/common_line_h" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="7" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_7" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="8" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_8" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="9" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_9" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+    </LinearLayout>
+    <include layout="@layout/common_line_h" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="*" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_star" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="0" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_0" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+        <include layout="@layout/common_line_v" android:layout_width="1dp" android:layout_height="fill_parent" />
+        <ImageButton android:tag="\#" android:background="@drawable/bg_dial_num_common_123" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/dial_num_pound" android:layout_weight="1.0" android:contentDescription="@null" android:onClick="keyNum" />
+    </LinearLayout>
+</LinearLayout>

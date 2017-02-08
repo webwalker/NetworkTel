@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_record_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/nav_top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.zxcloud.tel.ui.TopNavBar
+            android:id="@+id/inc_navbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/call_log_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/nav_top_container"
+        android:cacheColorHint="#000000"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/dial_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/dial_callbar_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dial_callbar_top" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dial_keyboard"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

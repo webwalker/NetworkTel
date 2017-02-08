@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/view_dialerpad_handler"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_callbar_call"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0.5dp"
+        android:layout_weight="3.0"
+        android:background="@drawable/selector_call_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_call"
+            android:gravity="center"
+            android:text="呼叫"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_callbar_del"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/dial_kb_up1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/font_15" />
+    </LinearLayout>
+
+</LinearLayout>

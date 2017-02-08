@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi直拨"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议WiFi下使用"
+            android:textColor="@color/font_comment"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/inc_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/inc_line_light" />
+
+    <LinearLayout
+        android:id="@+id/lFree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免流量拨打"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通话效果取决于手机信号，免流量"
+            android:textColor="@color/font_comment"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/inc_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/inc_line_light" />
+
+    <LinearLayout
+        android:id="@+id/lSim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机卡拨打"
+            android:textColor="@color/common_blue"
+            android:textSize="@dimen/font_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用您通信运营商拨打，资费从手机卡扣除"
+            android:textColor="@color/font_comment"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+
+</LinearLayout>
